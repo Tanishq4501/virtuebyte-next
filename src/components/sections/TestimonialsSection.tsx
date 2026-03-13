@@ -42,12 +42,12 @@ export default function TestimonialsSection() {
             768: { slidesPerView: 2, spaceBetween: 10 },
             1024: { slidesPerView: 3, spaceBetween: 15 },
           }}
-          className="pb-16"
+          className="pb-16 testimonial-swiper"
         >
           {testimonials.map((testimonial, index) => (
-            <SwiperSlide key={index}>
-              <div className="relative bg-dark rounded-[20px] p-[30px] border border-[#FFFFFFB0] h-full overflow-hidden">
-                <p className="text-white text-[18px] leading-relaxed mb-6">
+              <SwiperSlide key={index} className="h-auto">
+                <div className="relative bg-dark rounded-[20px] p-[30px] border border-[#FFFFFFB0] h-full md:h-[420px] lg:h-[430px] overflow-hidden flex flex-col">
+                  <p className="text-white text-[18px] leading-relaxed text-justify mb-6 flex-1">
                   {testimonial.quote}
                 </p>
                 <div className="flex mb-3 gap-[5px]">
