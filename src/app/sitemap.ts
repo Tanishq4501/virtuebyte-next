@@ -1,48 +1,70 @@
-import { MetadataRoute } from "next";
+﻿import { MetadataRoute } from "next";
+import { getAllPosts } from "@/lib/blog";
+import fs from "fs";
+import path from "path";
 
-export const dynamic = "force-static";
+export const revalidate = 60;
 
 const BASE_URL = "https://virtuebytech.com";
+const DEFAULT_LAST_MODIFIED = new Date().toISOString();
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const staticPages = [
-    "",
-    "/about/",
-    "/services/",
-    "/services/salesforce-implementation/",
-    "/services/ai-ml-consulting/",
-    "/services/data-science-analytics/",
-    "/services/offshore-development-centers/",
-    "/services/cloud-services/",
-    "/services/devops-consulting-services/",
-    "/products/",
-    "/products/virtuelite/",
-    "/products/virtunest/",
-    "/case-studies/",
-    "/blog/",
-    "/contact/",
-  ];
+ const posts = getAllPosts();
+ 
+ const blogSitemaps = posts.map((post) => ({
+ url: `${BASE_URL}/blog/${post.slug}/`,
+ lastModified: post.date? new Date(post.date).toISOString() : DEFAULT_LAST_MODIFIED,
+ priority: 0.64,
+ }));
 
-  const blogSlugs = [
-    "driving-manufacturing-growth-with-salesforce",
-    "spam-movie-review-detection",
-    "bi-for-manufacturing-industry",
-    "ml-for-test-case-generation-and-classification",
-  ];
+ const staticRoutes = [
+ "/",
+ "/about",
+ "/services",
+ "/products",
+ "/case-studies",
+ "/blog",
+ "/contact",
+ "/services/salesforce-implementation",
+ "/services/ai-ml-consulting",
+ "/services/data-science-analytics",
+ "/services/offshore-development-centers",
+ "/services/cloud-services",
+ "/services/devops-consulting-services",
+ "/products/virtuelite",
+ "/products/virtunest",
+ ].map((route) => ({
+ url: `${BASE_URL}${route}/`,
+ lastModified: DEFAULT_LAST_MODIFIED,
+ priority: 0.8,
+ }));
 
-  const pages: MetadataRoute.Sitemap = staticPages.map((path) => ({
-    url: `${BASE_URL}${path}`,
-    lastModified: new Date(),
-    changeFrequency: path === "" ? "weekly" : "monthly",
-    priority: path === "" ? 1 : path === "/about/" ? 0.9 : 0.8,
-  }));
+ // Read custom sitemap configuration from Keystatic
+ let customSitemaps: MetadataRoute.Sitemap = [];
+ try {
+ const sitemapPath = path.join(process.cwd(), "content", "sitemap-config.json");
+ if (fs.existsSync(sitemapPath)) {
+ const sitemapData = JSON.parse(fs.readFileSync(sitemapPath, "utf-8"));
+ if (sitemapData.urls && Array.isArray(sitemapData.urls)) {
+ customSitemaps = sitemapData.urls.map((entry: any) => {
+ let customPath = entry.path || "";
+ if (customPath.startsWith("/")) customPath = customPath.substring(1);
+ return {
+ url: `${BASE_URL}/${customPath}${customPath? "/" : ""}`,
+ lastModified: DEFAULT_LAST_MODIFIED,
+ priority: entry.priority !== undefined? entry.priority : 0.8,
+ };
+ });
+ }
+ }
+ } catch(e) {
+ console.error("Error reading sitemap custom URLs", e);
+ }
 
-  const blogPages: MetadataRoute.Sitemap = blogSlugs.map((slug) => ({
-    url: `${BASE_URL}/blog/${slug}/`,
-    lastModified: new Date(),
-    changeFrequency: "monthly" as const,
-    priority: 0.7,
-  }));
+ if (staticRoutes.length > 0) {
+ staticRoutes[0].priority = 1.0;
+ }
 
-  return [...pages, ...blogPages];
+ return [...staticRoutes,...blogSitemaps,...customSitemaps];
 }
+
