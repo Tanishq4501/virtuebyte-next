@@ -134,7 +134,7 @@ export default function AboutPage() {
                             <p className="text-text-light text-[16px] md:text-[18px] leading-relaxed text-justify">
                                 We partner with growth-focused organizations that want scalable
                                 systems, streamlined workflows, and measurable business
-                                outcomes. Our work goes beyond implementation â€” we design
+                                outcomes. Our work goes beyond implementation. we design
                                 intelligent technology ecosystems that evolve with your company.
                             </p>
                         </AnimatedSection>
@@ -221,7 +221,7 @@ export default function AboutPage() {
                                 />
                                 <div className="relative p-5 pb-5">
                                     <h3 className="text-[24px] font-semibold font-fira text-white mb-3 leading-[1.4em]">
-                                        VISION
+                                     OUR VISION
                                     </h3>
                                     <p className="text-text-light text-[18px] leading-relaxed">
                                         We aspire to become a trusted global partner helping
@@ -243,7 +243,7 @@ export default function AboutPage() {
                                 />
                                 <div className="relative p-5 pb-5">
                                     <h3 className="text-[24px] font-semibold font-fira text-white mb-3 leading-[1.4em]">
-                                        MISSION
+                                     OUR MISSION
                                     </h3>
                                     <p className="text-text-light text-[18px] leading-relaxed">
                                         To design, implement, and optimize technology ecosystems
@@ -471,7 +471,7 @@ export default function AboutPage() {
                             </ul>
                             <p className="text-text-light text-[16px] md:text-[18px] leading-relaxed mt-6 text-justify">
                                 We foster a culture of accountability, ownership, and long-term
-                                partnership. Our team doesn&apos;t just deliver projects â€” we
+                                partnership. Our team doesn't just deliver projects-we
                                 build systems that evolve with your business.
                             </p>
                         </AnimatedSection>

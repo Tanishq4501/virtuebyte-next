@@ -25,7 +25,7 @@ export default function StrategicSection() {
  </h2>
  <p className="text-text-light text-[16px] md:text-[18px] leading-relaxed text-center max-w-3xl mx-auto mb-3">
  At VirtueByte, we combine deep technical expertise with business
- understanding. Our focus is not just implementation â€” it&apos;s
+ understanding. Our focus is not just implementation but it&apos;s
  transformation.
  </p>
  <p className="text-text-light text-[16px] md:text-[18px] leading-relaxed text-center max-w-3xl mx-auto mb-12">

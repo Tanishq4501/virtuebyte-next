@@ -22,7 +22,7 @@ export default function IndustriesSection() {
  <div className="relative max-w-[1280px] mx-auto px-5 lg:px-8">
  <SectionHeading title="Industries We Serve" />
  <p className="text-text-light text-[16px] md:text-[18px] leading-relaxed text-center max-w-3xl mx-auto mb-10 -mt-4">
- We collaborate with businesses across various industries. Every industry has unique operational challenges â€” we tailor our solutions accordingly.
+ We collaborate with businesses across various industries. Every industry has unique operational challenges-we tailor our solutions accordingly.
  </p>
  <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-5">
  {industries.map((industry, index) => (

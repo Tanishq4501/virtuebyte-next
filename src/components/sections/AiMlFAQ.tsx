@@ -28,7 +28,7 @@ const faqs = [
  },
  {
  question: "How do I choose the right AI consulting company for my business?",
- answer: "Choosing the right AI consulting partner depends on their industry experience, technical expertise, and ability to deliver measurable ROI. Look for a company that offers end-to-end servicesâ€”from strategy and model development to deployment and optimization. A reliable provider of AI Consulting Services should also align AI solutions with your specific business goals rather than offering generic implementations."
+ answer: "Choosing the right AI consulting partner depends on their industry experience, technical expertise, and ability to deliver measurable ROI. Look for a company that offers end-to-end services-from strategy and model development to deployment and optimization. A reliable provider of AI Consulting Services should also align AI solutions with your specific business goals rather than offering generic implementations."
  },
  {
  question: "Can AI solutions be integrated with my existing business systems?",
@@ -36,11 +36,11 @@ const faqs = [
  },
  {
  question: "Do I need a large amount of data to implement AI in my business?",
- answer: "While having quality data improves AI performance, you donâ€™t always need massive datasets to get started. Many AI consulting services begin with available structured data and gradually scale as more data is collected and refined. Data preparation and preprocessing play a key role in maximizing results."
+ answer: "While having quality data improves AI performance, you don't always need massive datasets to get started. Many AI consulting services begin with available structured data and gradually scale as more data is collected and refined. Data preparation and preprocessing play a key role in maximizing results."
  },
  {
  question: "What industries benefit the most from AI consulting services?",
- answer: "AI consulting delivers value across multiple industries including healthcare, finance, retail, manufacturing, and logistics. Each industry benefits differentlyâ€”ranging from predictive analytics and automation to customer personalization and operational efficiency improvements."
+ answer: "AI consulting delivers value across multiple industries including healthcare, finance, retail, manufacturing, and logistics. Each industry benefits differently-ranging from predictive analytics and automation to customer personalization and operational efficiency improvements."
  },
  {
  question: "How do AI consulting services help improve ROI?",
