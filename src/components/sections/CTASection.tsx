@@ -17,10 +17,10 @@ export default function CTASection() {
  Let&apos;s Build Smarter Systems Together
  </h2>
  <p className="text-text-light text-[16px] md:text-[18px] mb-8 leading-relaxed">
- If you&apos;re looking for a reliable Salesforce, AI, cloud, DevOps, or offshore development partner, VirtueByte is ready to support your growth journey. Whether you need strategy, implementation, or optimization â€” we bring clarity to complex technology.
+ If you&apos;re looking for a reliable Salesforce, AI, cloud, DevOps, or offshore development partner, VirtueByte is ready to support your growth journey.
  </p>
  <p className="text-white/60 text-[15px] italic mb-6">
- Whether you need strategy, implementation, or optimization â€” we bring clarity to complex technology through expert-led IT Consulting Services companies trust for long-term growth.
+ Whether you need strategy, implementation, or optimization - we bring clarity to complex technology through expert-led IT Consulting Services companies trust for long-term growth.
  </p>
  <CTAButton href="/contact/">Request a Free Consultation</CTAButton>
  </AnimatedSection>

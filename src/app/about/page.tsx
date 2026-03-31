@@ -264,39 +264,49 @@ export default function AboutPage() {
             </section>
 
             {/* Core Values */}
-            <section className="relative py-[80px] bg-[#E5A2FF0A] overflow-hidden">
+            <section className="relative py-[70px] bg-[#E5A2FF0A] overflow-hidden">
                 <div className="absolute inset-0 bg-[radial-gradient(at_center_right,#F6921E_0%,#FFFFFF00_50%)] opacity-10 pointer-events-none" />
+
                 <div className="relative max-w-[1280px] mx-auto px-5 lg:px-8">
                     <SectionHeading
                         title="Our Core Values"
                         subtitle="Our work is guided by principles that ensure consistency and long-term partnerships."
                     />
-                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+
+                    {/* ✅ 2x2 Perfect Grid */}
+                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-[900px] mx-auto">
                         {coreValues.map((value, index) => (
                             <AnimatedSection
                                 key={value.title}
                                 animation="fadeInUp"
                                 delay={index * 0.1}
                             >
-                                <div className="relative bg-[#E5A2FF0A] rounded-[20px] overflow-hidden border border-[#E5A2FF0A] hover:shadow-[0px_5px_30px_0px_rgba(0,0,0,0.41)] transition-all duration-300 h-full group hover-bob">
-                                    <div className="absolute inset-0 bg-[radial-gradient(at_top_left,#F6921E_0%,#FFFFFF00_50%)] opacity-20 pointer-events-none rounded-[20px]" />
-                                    <div className="relative h-56 md:h-64 overflow-hidden rounded-t-[20px]">
+                                <div className="group relative bg-[#E5A2FF0A] rounded-[18px] overflow-hidden border border-[#E5A2FF0A] hover:shadow-[0px_5px_25px_rgba(0,0,0,0.35)] transition-all duration-300 h-full flex flex-col">
+
+                                    {/* Gradient */}
+                                    <div className="absolute inset-0 bg-[radial-gradient(at_top_left,#F6921E_0%,#FFFFFF00_50%)] opacity-20 pointer-events-none rounded-[18px]" />
+
+                                    {/* ✅ Reduced Image Height */}
+                                    <div className="relative h-40 md:h-44 overflow-hidden rounded-t-[18px]">
                                         <Image
                                             src={value.image}
                                             alt={`${value.title} core value illustration`}
                                             fill
                                             className="object-cover transition-transform duration-[800ms] group-hover:scale-105"
-                                            sizes="(max-width: 640px) 100vw, 50vw"
                                         />
                                     </div>
-                                    <div className="relative p-6">
-                                        <div className="flex items-center gap-3 mb-3">
-                                            <value.icon className="text-primary text-2xl flex-shrink-0" />
-                                            <h3 className="text-[21px] font-semibold font-fira text-white leading-[1.4em]">
+
+                                    {/* ✅ Compact Content */}
+                                    <div className="relative p-5 flex flex-col flex-1">
+                                        <div className="flex items-center gap-2.5 mb-2">
+                                            <value.icon className="text-primary text-xl flex-shrink-0" />
+
+                                            <h3 className="text-[18px] md:text-[20px] font-semibold font-fira text-white leading-[1.3em]">
                                                 {value.title}
                                             </h3>
                                         </div>
-                                        <p className="text-text-light text-[18px] leading-relaxed">
+
+                                        <p className="text-text-light text-[15px] md:text-[16px] leading-relaxed">
                                             {value.description}
                                         </p>
                                     </div>
