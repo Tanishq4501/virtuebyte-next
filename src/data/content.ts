@@ -80,7 +80,6 @@ export const clientLogos = [
  "/images/clients/client-8.webp",
  "/images/clients/client-9.webp",
  "/images/clients/client-10.webp",
- "/images/clients/client-11.webp",
 ];
 
 export const products = [

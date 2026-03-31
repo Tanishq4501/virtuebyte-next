@@ -73,8 +73,9 @@ export default function RootLayout({
  children: React.ReactNode;
 }>) {
  return (
- <html lang="en">
+ <html lang="en"    >
  <head>
+ <meta charSet="UTF-8" />
  <Script
  src="https://www.googletagmanager.com/gtag/js?id=G-WT3KJTGEN5"
  strategy="beforeInteractive"

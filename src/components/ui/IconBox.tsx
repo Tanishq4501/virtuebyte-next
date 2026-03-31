@@ -52,7 +52,7 @@ export default function IconBox({
  <ul className="mt-4 space-y-2">
  {features.map((feature, index) => (
  <li key={index} className="text-text-light text-[16px] md:text-[18px] leading-relaxed flex items-start gap-2">
- <span className="text-primary mt-1 text-sm">âœ¦</span>
+ <span className="text-primary mt-1 text-sm">{"\u2726"}</span>
  <span>{feature}</span>
  </li>
  ))}

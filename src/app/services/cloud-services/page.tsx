@@ -195,11 +195,11 @@ export default function CloudServicesPage() {
  Cloud transformation enables:
  </p>
  <ul className="space-y-2 mb-4">
- <li className="text-text-light text-[16px] md:text-[18px] leading-relaxed flex items-start gap-2"><span className="text-primary mt-1 text-sm">âœ¦</span><span>Faster software deployment cycles</span></li>
- <li className="text-text-light text-[16px] md:text-[18px] leading-relaxed flex items-start gap-2"><span className="text-primary mt-1 text-sm">âœ¦</span><span>Reduced infrastructure costs</span></li>
- <li className="text-text-light text-[16px] md:text-[18px] leading-relaxed flex items-start gap-2"><span className="text-primary mt-1 text-sm">âœ¦</span><span>Increased scalability and elasticity</span></li>
- <li className="text-text-light text-[16px] md:text-[18px] leading-relaxed flex items-start gap-2"><span className="text-primary mt-1 text-sm">âœ¦</span><span>Stronger security and compliance</span></li>
- <li className="text-text-light text-[16px] md:text-[18px] leading-relaxed flex items-start gap-2"><span className="text-primary mt-1 text-sm">âœ¦</span><span>Improved disaster recovery and uptime</span></li>
+ <li className="text-text-light text-[16px] md:text-[18px] leading-relaxed flex items-start gap-2"><span className="text-primary mt-1 text-sm">{"\u2726"}</span><span>Faster software deployment cycles</span></li>
+ <li className="text-text-light text-[16px] md:text-[18px] leading-relaxed flex items-start gap-2"><span className="text-primary mt-1 text-sm">{"\u2726"}</span><span>Reduced infrastructure costs</span></li>
+ <li className="text-text-light text-[16px] md:text-[18px] leading-relaxed flex items-start gap-2"><span className="text-primary mt-1 text-sm">{"\u2726"}</span><span>Increased scalability and elasticity</span></li>
+ <li className="text-text-light text-[16px] md:text-[18px] leading-relaxed flex items-start gap-2"><span className="text-primary mt-1 text-sm">{"\u2726"}</span><span>Stronger security and compliance</span></li>
+ <li className="text-text-light text-[16px] md:text-[18px] leading-relaxed flex items-start gap-2"><span className="text-primary mt-1 text-sm">{"\u2726"}</span><span>Improved disaster recovery and uptime</span></li>
  </ul>
  <p className="text-text-light text-[16px] md:text-[18px] leading-relaxed text-justify">
  We combine cloud strategy with DevOps consulting services to help businesses modernize their digital infrastructure efficiently through specialized cloud DevOps consulting services.

@@ -207,7 +207,7 @@ export default function SalesforceImplementationPage() {
  <ul className="space-y-3">
  {provenResults.map((result, i) => (
  <li key={i} className="flex items-start gap-3">
- <span className="text-primary mt-1 text-sm">âœ¦</span>
+ <span className="text-primary mt-1 text-sm">{"\u2726"}</span>
  <span className="text-text-light text-[16px] md:text-[18px]">
  {result}
  </span>

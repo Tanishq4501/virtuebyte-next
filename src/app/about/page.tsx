@@ -192,7 +192,7 @@ export default function AboutPage() {
                                     "Dedicated offshore development teams",
                                 ].map((item, i) => (
                                     <li key={i} className="flex items-start gap-3">
-                                        <span className="text-primary mt-1.5 text-sm">âœ¦</span>
+                                        <span className="text-primary mt-1.5 text-sm">{"\u2726"}</span>
                                         <span className="text-text-light text-[16px] md:text-[18px]">
                                             {item}
                                         </span>
@@ -462,7 +462,7 @@ export default function AboutPage() {
                                     "Cross-functional collaboration",
                                 ].map((item, i) => (
                                     <li key={i} className="flex items-start gap-3">
-                                        <span className="text-primary mt-1.5 text-sm">âœ¦</span>
+                                        <span className="text-primary mt-1.5 text-sm">{"\u2726"}</span>
                                         <span className="text-text-light text-[16px] md:text-[18px]">
                                             {item}
                                         </span>
@@ -572,7 +572,7 @@ export default function AboutPage() {
                                         />
                                     </div>
                                     <div className="relative p-5 text-center">
-                                        <span className="text-primary text-sm">âœ¦</span>
+                                        <span className="text-primary text-sm">{"\u2726"}</span>
                                         <p className="text-white text-[18px] font-semibold font-fira mt-2">
                                             {item.title}
                                         </p>
