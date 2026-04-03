@@ -86,6 +86,49 @@ function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
 gtag('config', 'G-WT3KJTGEN5');`}
  </Script>
+ <Script id="content-protection" strategy="afterInteractive">
+ {`(function () {
+	const isEditable = (target) => {
+		if (!(target instanceof Element)) return false;
+		const tag = target.tagName;
+		return (
+			target.isContentEditable ||
+			tag === 'INPUT' ||
+			tag === 'TEXTAREA' ||
+			tag === 'SELECT'
+		);
+	};
+
+	document.addEventListener('contextmenu', function (event) {
+		event.preventDefault();
+	}, true);
+
+	document.addEventListener('copy', function (event) {
+		if (isEditable(event.target)) return;
+		event.preventDefault();
+	}, true);
+
+	document.addEventListener('cut', function (event) {
+		if (isEditable(event.target)) return;
+		event.preventDefault();
+	}, true);
+
+	document.addEventListener('selectstart', function (event) {
+		if (isEditable(event.target)) return;
+		event.preventDefault();
+	}, true);
+
+	document.addEventListener('keydown', function (event) {
+		const key = event.key.toLowerCase();
+		const withModifier = event.ctrlKey || event.metaKey;
+
+		if (withModifier && (key === 'c' || key === 'x')) {
+			if (isEditable(event.target)) return;
+			event.preventDefault();
+		}
+	}, true);
+})();`}
+ </Script>
  </head>
  <body
  className={`${firaSans.variable} ${outfit.variable} ${lato.variable} antialiased`}
