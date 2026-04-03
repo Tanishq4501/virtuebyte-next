@@ -215,7 +215,7 @@ export default function SalesforceImplementationPage() {
  ))}
  </ul>
  <p className="text-primary italic text-[16px] mt-6">
- Our focus is not just implementation â€” it&apos;s measurable
+ Our focus is not just implementation - it&apos;s measurable
  performance improvement.
  </p>
  </div>
@@ -292,4 +292,5 @@ export default function SalesforceImplementationPage() {
  </>
  );
 }
+
 

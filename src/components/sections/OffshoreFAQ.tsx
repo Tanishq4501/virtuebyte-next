@@ -33,7 +33,7 @@ const faqs = [
     },
     {
         question: "How is an Offshore Development Company different from traditional outsourcing?",
-        answer: "An Offshore Development Company offers a more structured, long-term engagement model compared to traditional outsourcing. Instead of working on short-term projects, you get a dedicated offshore team that aligns with your business goals, follows your processes, and works as an extension of your in-house teamâ€”ensuring better control, transparency, and scalability."
+        answer: "An Offshore Development Company offers a more structured, long-term engagement model compared to traditional outsourcing. Instead of working on short-term projects, you get a dedicated offshore team that aligns with your business goals, follows your processes, and works as an extension of your in-house team - ensuring better control, transparency, and scalability."
     },
     {
         question: "What are the key benefits of hiring an Offshore Development Company?",
@@ -101,4 +101,5 @@ export default function OffshoreFAQ() {
         </section>
     );
 }
+
 

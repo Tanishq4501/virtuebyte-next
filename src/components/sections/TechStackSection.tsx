@@ -10,7 +10,7 @@ export default function TechStackSection() {
  <div className="relative max-w-[1280px] mx-auto px-5 lg:px-8">
  <AnimatedSection animation="fadeInUp">
  <h2 className="text-[26px] md:text-[36px] font-semibold text-white text-center font-fira mb-10" style={{ lineHeight: '1.3em' }}>
- Technology Prowess
+ Technology Stack
  </h2>
  </AnimatedSection>
  <AnimatedSection animation="fadeIn" delay={0.2}>

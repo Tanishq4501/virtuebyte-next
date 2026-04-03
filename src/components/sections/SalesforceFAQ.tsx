@@ -28,7 +28,7 @@ const faqs = [
  },
  {
  question: "How do you ensure user adoption during Salesforce implementation?",
- answer: "We focus heavily on user adoption by providing customized training, intuitive UI configurations, and workflow alignment based on your teamâ€™s daily operations. Our goal is to make Salesforce easy to use so your team can quickly adapt and maximize productivity."
+ answer: "We focus heavily on user adoption by providing customized training, intuitive UI configurations, and workflow alignment based on your team's daily operations. Our goal is to make Salesforce easy to use so your team can quickly adapt and maximize productivity."
  },
  {
  question: "Do you offer Salesforce AI and analytics capabilities?",
@@ -92,4 +92,5 @@ export default function SalesforceFAQ() {
  </section>
  );
 }
+
 

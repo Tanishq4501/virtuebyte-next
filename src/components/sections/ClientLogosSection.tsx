@@ -15,6 +15,8 @@ function getLogoAlt(logoPath: string, index: number) {
 }
 
 export default function ClientLogosSection() {
+    const logoVersion = process.env.NEXT_PUBLIC_CLIENT_LOGOS_VERSION || "20260331";
+
     return (
         <section className="relative py-[40px] bg-[#E5A2FF0A] overflow-hidden">
             {/* Gradient overlay */}
@@ -43,7 +45,7 @@ export default function ClientLogosSection() {
                         <SwiperSlide key={index}>
                             <div className="flex items-center justify-center p-3 min-h-[90px]">
                                 <Image
-                                    src={logo}
+                                    src={`${logo}?v=${logoVersion}`}
                                     alt={getLogoAlt(logo, index)}
                                     width={280}
                                     height={140}

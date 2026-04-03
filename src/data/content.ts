@@ -70,16 +70,16 @@ export const partners = [
 ];
 
 export const clientLogos = [
- "/images/clients/client-1.webp",
- "/images/clients/client-2.webp",
- "/images/clients/client-3.webp",
- "/images/clients/client-4.webp",
- "/images/clients/client-5.webp",
- "/images/clients/client-6.webp",
- "/images/clients/client-7.webp",
- "/images/clients/client-8.webp",
- "/images/clients/client-9.webp",
- "/images/clients/client-10.webp",
+ "/images/clients/new/client-1.webp",
+ "/images/clients/new/client-2.webp",
+ "/images/clients/new/client-3.webp",
+ "/images/clients/new/client-4.webp",
+ "/images/clients/new/client-5.webp",
+ "/images/clients/new/client-6.webp",
+ "/images/clients/new/client-7.webp",
+ "/images/clients/new/client-8.webp",
+ "/images/clients/new/client-9.webp",
+ "/images/clients/new/client-10.webp",
 ];
 
 export const products = [

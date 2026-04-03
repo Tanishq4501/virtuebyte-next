@@ -1,5 +1,6 @@
 
-import React from "react";
+
+import CTAButton from "@/components/ui/CTAButton";
 
 export default function VirtuebyteIntro() {
   return (
@@ -9,7 +10,7 @@ export default function VirtuebyteIntro() {
         {/* LEFT CONTENT */}
         <div>
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-6 font-outfit">
-            Virtuebyte helps businesses build smarter digital systems
+            We help businesses build smarter digital systems
           </h2>
 
           <p className="mb-4 text-base md:text-lg leading-relaxed">
@@ -23,13 +24,12 @@ export default function VirtuebyteIntro() {
           </p>
 
           <div className="flex gap-4 mt-6">
-            <button className="px-6 py-3 bg-[var(--color-primary)] text-white rounded-xl font-semibold hover:bg-[var(--color-primary-dark)] transition">
+            <CTAButton href="/contact" variant="primary" size="md">
               Get Started
-            </button>
-
-            <button className="px-6 py-3 border border-[var(--color-primary)] text-[var(--color-primary)] rounded-xl font-semibold hover:bg-[var(--color-primary)] hover:text-white transition">
+            </CTAButton>
+            <CTAButton href="/about" variant="outline" size="md">
               Learn More
-            </button>
+            </CTAButton>
           </div>
         </div>
 

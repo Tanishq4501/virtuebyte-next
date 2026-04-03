@@ -15,6 +15,7 @@ import CTASection from "@/components/sections/CTASection";
 import { getCanonicalUrl } from "@/lib/seo";
 import Script from "next/script";
 import VirtuebyteIntro from "@/components/sections/VirtuebyteIntro";
+import NewProductsSection from "@/components/sections/NewProductsSection";
 
 export const metadata: Metadata = {
     description:
@@ -97,20 +98,22 @@ export default function HomePage() {
             />
             <HeroSection />
             <VirtuebyteIntro />
+            <ClientLogosSection />
             <PartnersSection />
             {/*  <StrategicSection />
  */}
 
             <ServicesSection />
             <TechStackSection />
-            <ProductsSection />
+            <NewProductsSection />
             <MilestonesSection />
-            <ClientLogosSection />
-            <IndustriesSection />
-            <TestimonialsSection />
+            <ProductsSection />
+            {/*             <IndustriesSection />
+ */}
             <DifferenceSection />
-            <FAQSection />
-            <CTASection />
+            <TestimonialsSection />
+                      <FAQSection />
+           <CTASection />
         </>
     );
 }

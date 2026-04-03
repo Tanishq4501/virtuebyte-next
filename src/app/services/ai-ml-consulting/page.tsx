@@ -43,7 +43,7 @@ export const metadata: Metadata = {
 
 const whyChooseItems = [
  { icon: FaBullseye, text: "Industry-focused AI expertise" },
- { icon: FaCogs, text: "Custom-built solutions â€” never generic frameworks" },
+ { icon: FaCogs, text: "Custom-built solutions - never generic frameworks" },
  { icon: FaChartLine, text: "ROI-driven AI automation consulting" },
  { icon: FaRocket, text: "Structured implementation framework" },
  { icon: FaExpandArrowsAlt, text: "Scalable and secure model deployment" },
@@ -245,7 +245,7 @@ export default function AiMlConsultingPage() {
  <AnimatedSection animation="fadeInRight" delay={0.2}>
  <div className="bg-[#E5A2FF0A] rounded-[20px] border border-[#E5A2FF0A] p-8">
  <p className="text-text-light text-[16px] md:text-[18px] leading-relaxed mb-4">
- We focus on practical, enterprise-ready AI â€” not experimental
+ We focus on practical, enterprise-ready AI - not experimental
  concepts, delivering scalable AI solutions for long-term
  business impact.
  </p>
@@ -373,7 +373,7 @@ export default function AiMlConsultingPage() {
  </div>
  <AnimatedSection animation="fadeInUp" delay={0.7}>
  <p className="text-primary text-center italic text-[16px] md:text-[18px] mt-8">
- AI is no longer optional for growth-focused organizations â€” it&apos;s
+ AI is no longer optional for growth-focused organizations - it&apos;s
  a strategic necessity.
  </p>
  </AnimatedSection>
@@ -397,7 +397,7 @@ export default function AiMlConsultingPage() {
  <p className="text-text-light text-[16px] md:text-[18px] leading-relaxed mb-4 max-w-2xl mx-auto">
  AI is most powerful when aligned with business strategy. If
  you&apos;re exploring AI consulting, machine learning
- implementation, or enterprise AI integration â€” VirtueByte is ready
+ implementation, or enterprise AI integration - VirtueByte is ready
  to guide you from strategy to deployment.
  </p>
  <p className="text-primary italic text-[16px] md:text-[18px] mb-8 max-w-2xl mx-auto">
@@ -416,4 +416,5 @@ export default function AiMlConsultingPage() {
  </>
  );
 }
+
 

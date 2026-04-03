@@ -9,12 +9,12 @@ const faqs = [
  {
  question: "What is DevOps consulting?",
  answer:
- "DevOps consulting helps organizations streamline software development and IT operations through automation, CI/CD implementation, infrastructure as code, and cultural transformation â€” resulting in faster releases, fewer failures, and improved collaboration.",
+ "DevOps consulting helps organizations streamline software development and IT operations through automation, CI/CD implementation, infrastructure as code, and cultural transformation - resulting in faster releases, fewer failures, and improved collaboration.",
  },
  {
  question: "How long does it take to implement DevOps?",
  answer:
- "Initial pipeline setup and CI/CD integration can take 4â€“8 weeks. Full DevOps transformation â€” including automation, monitoring, and culture alignment â€” may take 3â€“6 months depending on the organization's size and existing infrastructure.",
+ "Initial pipeline setup and CI/CD integration can take 4-8 weeks. Full DevOps transformation - including automation, monitoring, and culture alignment - may take 3-6 months depending on the organization's size and existing infrastructure.",
  },
  {
  question: "Which tools do you use for DevOps?",
@@ -24,12 +24,12 @@ const faqs = [
  {
  question: "Can DevOps work with legacy systems?",
  answer:
- "Yes. We help modernize legacy environments by introducing containerization, automated testing, and incremental CI/CD pipelines â€” enabling DevOps benefits without requiring a full system rewrite.",
+ "Yes. We help modernize legacy environments by introducing containerization, automated testing, and incremental CI/CD pipelines - enabling DevOps benefits without requiring a full system rewrite.",
  },
  {
  question: "What industries benefit most from DevOps?",
  answer:
- "DevOps benefits any industry that relies on software delivery â€” including healthcare, finance, retail, manufacturing, and logistics. Any organization seeking faster releases, improved reliability, and reduced operational costs can benefit.",
+ "DevOps benefits any industry that relies on software delivery - including healthcare, finance, retail, manufacturing, and logistics. Any organization seeking faster releases, improved reliability, and reduced operational costs can benefit.",
  },
  {
  question: "How do you measure DevOps success?",
@@ -50,7 +50,7 @@ const faqs = [
  },
  {
  question: "How do I know if my business needs DevOps consulting services?",
- answer: "If your business is facing slow deployments, frequent system failures, lack of automation, or difficulty scaling infrastructure, itâ€™s a strong indicator that you need DevOps consulting. Companies looking to adopt cloud technologies, CI/CD pipelines, or improve development efficiency can benefit significantly from DevOps transformation."
+ answer: "If your business is facing slow deployments, frequent system failures, lack of automation, or difficulty scaling infrastructure, it's a strong indicator that you need DevOps consulting. Companies looking to adopt cloud technologies, CI/CD pipelines, or improve development efficiency can benefit significantly from DevOps transformation."
  }
 ];
 
@@ -102,4 +102,5 @@ export default function DevOpsFAQ() {
  </section>
  );
 }
+
 

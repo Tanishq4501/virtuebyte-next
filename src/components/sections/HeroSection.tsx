@@ -37,17 +37,18 @@ export default function HeroSection() {
 {/*                             <p className="text-[14px] font-semibold tracking-[0.08em] text-primary md:text-[15px]">
                                 Trusted IT, Salesforce & Cloud Solutions Provider
                             </p> */}
-                            <h1 className="text-[30px] sm:text-[36px] md:text-[46px] lg:text-[50px] font-semibold text-white font-fira leading-[1.2em]">
-Build Scalable Digital Solutions That Drive Real Business Growth                            </h1>
+            <h1 className="mb-10 text-[32px] sm:text-[40px] md:text-[48px] lg:text-[56px] xl:text-[64px] font-semibold text-white font-fira leading-[1.15]">
+  Build Scalable Digital Solutions That Drive Real Business Growth
+</h1>
                             
-<h2 className="font-semibold text-primary italic">Transforming Businesses Through Scalable Software, CRM & AI Solutions</h2>
-                        </AnimatedSection>
+{/* <h2 className="font-semibold text-primary italic">Transforming Businesses Through Scalable Software, CRM & AI Solutions</h2>
+ */}                        </AnimatedSection>
                         <AnimatedSection animation="fadeInUp" delay={0.2}>
 {/*                             <p className="mt-4 text-[16px] italic text-primary/80 font-medium">
                                 &ldquo;Technology should accelerate growth &mdash; not slow it down.&rdquo;
                             </p> */}
                             <p className="mt-4 text-[16px] md:text-[18px] leading-[1.5em] md:leading-[1.3em] lg:leading-[24px] text-[#E0E0E0] max-w-2xl tracking-[0.2px] md:tracking-[0.4px]">
-                                VirtueByte helps businesses around the world leverage technology to transform their operations and unlock the power of data-driven decision-making through Salesforce consulting, AI, cloud transformation, and software development. 
+                                Helping businesses around the world leverage technology to transform their operations and unlock the power of data-driven decision-making through Salesforce consulting, AI, cloud transformation, and software development. 
                             </p>
                         </AnimatedSection>
                         <AnimatedSection animation="fadeInUp" delay={0.4}>

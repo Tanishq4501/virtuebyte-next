@@ -19,6 +19,14 @@ import {
     FaComments,
 } from "react-icons/fa";
 import FAQAboutSection from "@/components/sections/FAQAboutSection";
+import OurApproachSection from "@/components/sections/OurApproachSection";
+import WhatWeDoSection from "@/components/sections/WhatWeDoSection";
+import IndustriesSection from "@/components/sections/IndustriesSection";
+import EngagementModelSection from "@/components/sections/EngagementModelSection";
+import WhyChooseSection from "@/components/sections/WhyChooseSection";
+import LifeAtVirtuebyteSection from "@/components/sections/LifeAtVirtuebyteSection";
+import VisionSection from "@/components/sections/VisionSection";
+import DifferenceSection2 from "@/components/sections/DifferenceSection2";
 
 export const metadata: Metadata = {
     title: "About Us | VirtueByte - Trusted Technology Consulting Partner",
@@ -116,7 +124,7 @@ export default function AboutPage() {
             <section className="relative py-[50px] overflow-hidden">
                 <div className="absolute inset-0 bg-[radial-gradient(at_center_left,#F6921E_0%,#FFFFFF00_50%)] opacity-10 pointer-events-none" />
                 <div className="relative max-w-[1280px] mx-auto px-5 lg:px-8">
-                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-stretch">
                         <AnimatedSection animation="fadeInLeft">
                             <h2
                                 className="text-[26px] md:text-[36px] font-semibold text-white font-fira mb-4"
@@ -134,19 +142,18 @@ export default function AboutPage() {
                             <p className="text-text-light text-[16px] md:text-[18px] leading-relaxed text-justify">
                                 We partner with growth-focused organizations that want scalable
                                 systems, streamlined workflows, and measurable business
-                                outcomes. Our work goes beyond implementation â€” we design
+                                outcomes. Our work goes beyond implementation - we design
                                 intelligent technology ecosystems that evolve with your company.
                             </p>
                         </AnimatedSection>
-                        <AnimatedSection animation="fadeInRight" delay={0.2}>
-                            <div className="relative">
-                                <div className="absolute inset-0 bg-[radial-gradient(at_center_center,#E5A2FF0A_65%,#FFFFFF00_50%)] opacity-100 pointer-events-none" />
+                        <AnimatedSection animation="fadeInRight" delay={0.2} className="h-full">
+                            <div className="relative h-full min-h-[320px] rounded-[20px] overflow-hidden">
+                                <div className="absolute inset-0 bg-[radial-gradient(at_center_center,#E5A2FF0A_65%,#FFFFFF00_50%)] opacity-100 pointer-events-none z-10" />
                                 <Image
                                     src="/images/about/about-hero.webp"
                                     alt="Technology consulting team workspace and modern office environment"
-                                    width={816}
-                                    height={1024}
-                                    className="w-[89%] max-w-full h-auto rounded-[20px] mx-auto relative"
+                                    fill
+                                    className="object-cover rounded-[20px]"
                                     priority
                                     fetchPriority="high"
                                     sizes="(min-width: 1024px) 45vw, 100vw"
@@ -158,54 +165,63 @@ export default function AboutPage() {
             </section>
 
             {/* Who We Are */}
-            <section className="relative py-[80px] bg-[#E5A2FF0A] overflow-hidden">
-                <div className="absolute inset-0 bg-[radial-gradient(at_top_right,#F6921E_0%,#FFFFFF00_50%)] opacity-10 pointer-events-none" />
-                <div className="relative max-w-[1280px] mx-auto px-5 lg:px-8">
-                    <SectionHeading
-                        title="Who We Are"
-                        subtitle="VirtueByte was founded with a clear objective: to bridge the gap between complex technology and real business impact."
-                    />
-                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
-                        <AnimatedSection animation="fadeInLeft">
-                            <p className="text-text-light text-[16px] md:text-[18px] leading-relaxed mb-6 text-justify">
-                                Many organizations invest in CRM systems, cloud platforms, or
-                                automation tools but still struggle to unlock their full
-                                potential. We exist to change that.
+            <section className="relative py-[80px] bg-[--color-dark-2] overflow-hidden">
+                {/* Gradient */}
+                <div className="absolute inset-0 bg-[radial-gradient(at_top_left,#F6921E_0%,#FFFFFF00_60%)] opacity-20 pointer-events-none" />
+
+                <div className="relative max-w-[1100px] mx-auto px-5 lg:px-8 text-center">
+
+                    {/* Heading */}
+                    <AnimatedSection animation="fadeInUp">
+                        <div className="mb-6 flex flex-col items-center">
+                            <h2 className="text-[28px] sm:text-[34px] md:text-[40px] font-semibold text-white font-fira leading-[1.2] max-w-[700px] mx-auto">
+                                Who We Are
+                            </h2>
+                        </div>
+                    </AnimatedSection>
+
+                    {/* Content */}
+                    <AnimatedSection animation="fadeInUp" delay={0.1}>
+                        <div className="space-y-5 max-w-[750px] mx-auto">
+                            <p className="text-[16px] sm:text-[18px] md:text-[19px] leading-[1.6] text-[#E0E0E0]">
+                                Virtuebyte Pvt Ltd is a technology-driven company providing IT consulting
+                                services and custom software development solutions to businesses across industries.
                             </p>
-                            <p className="text-text-light text-[16px] md:text-[18px] leading-relaxed text-justify">
-                                Our team comes with cross-industry experience and worldwide
-                                delivery capabilities, however, we keep a client-first approach
-                                based on transparency and measurable results. We support businesses across global markets and have built strong relationships with companies in major tech ecosystems, including those seeking a reliable software development company in for long-term digital transformation.
+
+                            <p className="text-[16px] sm:text-[18px] md:text-[19px] leading-[1.6] text-[#E0E0E0]">
+                                We help organisations leverage
+                                <span className="text-white"> CRM solutions</span>, including
+                                <span className="text-white"> Salesforce</span>, along with
+                                <span className="text-white"> AI</span>,
+                                <span className="text-white"> cloud technologies</span>, and
+                                <span className="text-white"> data-driven systems</span> to streamline operations,
+                                improve efficiency, and enable scalable business growth.
                             </p>
-                        </AnimatedSection>
-                        <AnimatedSection animation="fadeInRight" delay={0.2}>
-                            <h3 className="text-[20px] font-semibold text-white font-fira mb-4">
-                                We specialize in:
-                            </h3>
-                            <ul className="space-y-3">
-                                {[
-                                    "Salesforce consulting and CRM optimization",
-                                    "AI and machine learning solutions",
-                                    "Cloud migration and infrastructure management",
-                                    "Data science and advanced analytics",
-                                    "DevOps consulting and automation",
-                                    "Dedicated offshore development teams",
-                                ].map((item, i) => (
-                                    <li key={i} className="flex items-start gap-3">
-                                        <span className="text-primary mt-1.5 text-sm">{"\u2726"}</span>
-                                        <span className="text-text-light text-[16px] md:text-[18px]">
-                                            {item}
-                                        </span>
-                                    </li>
-                                ))}
-                            </ul>
-                        </AnimatedSection>
-                    </div>
+                        </div>
+                    </AnimatedSection>
+
                 </div>
             </section>
 
+            <div className="relative z-10">
+                <OurApproachSection sectionClass="bg-[--color-primary-light] bg-opacity-30" />
+            </div>
+
+                         <WhatWeDoSection />
+ 
+            <IndustriesSection />
+
+            <EngagementModelSection />
+
+            <DifferenceSection2 />
+
+
+            <LifeAtVirtuebyteSection galleryImages={galleryImages} />
+
+            <VisionSection />
+
             {/* Vision & Mission */}
-            <section className="relative py-[80px] overflow-hidden">
+            {/* <section className="relative py-[80px] overflow-hidden">
                 <div className="absolute inset-0 bg-[radial-gradient(at_top_center,#F6921E_0%,#FFFFFF00_50%)] opacity-10 pointer-events-none" />
                 <div className="relative max-w-[1280px] mx-auto px-5 lg:px-8">
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -262,9 +278,9 @@ export default function AboutPage() {
                     </AnimatedSection>
                 </div>
             </section>
-
+ */}
             {/* Core Values */}
-            <section className="relative py-[70px] bg-[#E5A2FF0A] overflow-hidden">
+            {/*            <section className="relative py-[70px] bg-[#E5A2FF0A] overflow-hidden">
                 <div className="absolute inset-0 bg-[radial-gradient(at_center_right,#F6921E_0%,#FFFFFF00_50%)] opacity-10 pointer-events-none" />
 
                 <div className="relative max-w-[1280px] mx-auto px-5 lg:px-8">
@@ -273,7 +289,6 @@ export default function AboutPage() {
                         subtitle="Our work is guided by principles that ensure consistency and long-term partnerships."
                     />
 
-                    {/* ✅ 2x2 Perfect Grid */}
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-[900px] mx-auto">
                         {coreValues.map((value, index) => (
                             <AnimatedSection
@@ -283,10 +298,8 @@ export default function AboutPage() {
                             >
                                 <div className="group relative bg-[#E5A2FF0A] rounded-[18px] overflow-hidden border border-[#E5A2FF0A] hover:shadow-[0px_5px_25px_rgba(0,0,0,0.35)] transition-all duration-300 h-full flex flex-col">
 
-                                    {/* Gradient */}
                                     <div className="absolute inset-0 bg-[radial-gradient(at_top_left,#F6921E_0%,#FFFFFF00_50%)] opacity-20 pointer-events-none rounded-[18px]" />
 
-                                    {/* ✅ Reduced Image Height */}
                                     <div className="relative h-40 md:h-44 overflow-hidden rounded-t-[18px]">
                                         <Image
                                             src={value.image}
@@ -296,7 +309,6 @@ export default function AboutPage() {
                                         />
                                     </div>
 
-                                    {/* ✅ Compact Content */}
                                     <div className="relative p-5 flex flex-col flex-1">
                                         <div className="flex items-center gap-2.5 mb-2">
                                             <value.icon className="text-primary text-xl flex-shrink-0" />
@@ -316,9 +328,9 @@ export default function AboutPage() {
                     </div>
                 </div>
             </section>
-
+ */}
             {/* Expertise & Approach */}
-            <section className="relative py-[80px] overflow-hidden">
+            {/*          <section className="relative py-[80px] overflow-hidden">
                 <div className="absolute inset-0 bg-[radial-gradient(at_center_left,#F6921E_0%,#FFFFFF00_50%)] opacity-10 pointer-events-none" />
                 <div className="relative max-w-[1280px] mx-auto px-5 lg:px-8">
                     <SectionHeading
@@ -360,9 +372,9 @@ export default function AboutPage() {
                     </div>
                 </div>
             </section>
-
+ */}
             {/* Methodology */}
-            <section className="relative py-[80px] bg-[#E5A2FF0A] overflow-hidden">
+            {/*           <section className="relative py-[80px] bg-[#E5A2FF0A] overflow-hidden">
                 <div className="absolute inset-0 bg-[radial-gradient(at_bottom_center,#F6921E_0%,#FFFFFF00_50%)] opacity-10 pointer-events-none" />
                 <div className="relative max-w-[1280px] mx-auto px-5 lg:px-8">
                     <SectionHeading
@@ -404,9 +416,9 @@ export default function AboutPage() {
                     </AnimatedSection>
                 </div>
             </section>
-
+ */}
             {/* Engagement Model */}
-            <section className="relative py-[80px] overflow-hidden">
+            {/*       <section className="relative py-[80px] overflow-hidden">
                 <div className="absolute inset-0 bg-[radial-gradient(at_top_left,#F6921E_0%,#FFFFFF00_50%)] opacity-10 pointer-events-none" />
                 <div className="relative max-w-[1280px] mx-auto px-5 lg:px-8">
                     <SectionHeading
@@ -447,9 +459,9 @@ export default function AboutPage() {
                     </AnimatedSection>
                 </div>
             </section>
-
+ */}
             {/* Team & Culture */}
-            <section className="relative py-[80px] bg-[#E5A2FF0A] overflow-hidden">
+            {/*      <section className="relative py-[80px] bg-[#E5A2FF0A] overflow-hidden">
                 <div className="relative max-w-[1280px] mx-auto px-5 lg:px-8">
                     <SectionHeading
                         title="Our Team & Culture"
@@ -481,7 +493,7 @@ export default function AboutPage() {
                             </ul>
                             <p className="text-text-light text-[16px] md:text-[18px] leading-relaxed mt-6 text-justify">
                                 We foster a culture of accountability, ownership, and long-term
-                                partnership. Our team doesn&apos;t just deliver projects â€” we
+                                partnership. Our team doesn&apos;t just deliver projects - we
                                 build systems that evolve with your business.
                             </p>
                         </AnimatedSection>
@@ -507,9 +519,9 @@ export default function AboutPage() {
                     </div>
                 </div>
             </section>
-
+ */}
             {/* Why Organizations Choose VirtueByte */}
-            <section className="relative py-[80px] overflow-hidden">
+            {/*         <section className="relative py-[80px] overflow-hidden">
                 <div className="absolute inset-0 bg-[radial-gradient(at_center_center,#F6921E_0%,#FFFFFF00_50%)] opacity-10 pointer-events-none" />
                 <div className="relative max-w-[1280px] mx-auto px-5 lg:px-8">
                     <SectionHeading
@@ -538,8 +550,8 @@ export default function AboutPage() {
                 </div>
             </section>
 
-            {/* Technology Partnerships */}
-            <section className="relative py-[80px] bg-[#E5A2FF0A] overflow-hidden">
+     */}        {/* Technology Partnerships */}
+            {/* <section className="relative py-[80px] bg-[#E5A2FF0A] overflow-hidden">
                 <div className="absolute inset-0 bg-[radial-gradient(at_bottom_right,#F6921E_0%,#FFFFFF00_50%)] opacity-10 pointer-events-none" />
                 <div className="relative max-w-[1280px] mx-auto px-5 lg:px-8">
                     <SectionHeading
@@ -600,28 +612,34 @@ export default function AboutPage() {
                     </AnimatedSection>
                 </div>
             </section>
+ */}
+                <FAQAboutSection />
 
-            <FAQAboutSection />
-
-            {/* CTA Section */}
+           {/* CTA Section */}
             <section className="relative py-[80px] overflow-hidden">
                 <div className="absolute inset-0 bg-[radial-gradient(at_center_center,#F6921E_0%,#FFFFFF00_50%)] opacity-10 pointer-events-none" />
-                <div className="relative max-w-[900px] mx-auto text-center">
+                <div className="relative max-w-[900px] mx-auto px-5 lg:px-8 text-center">
                     <AnimatedSection animation="fadeInUp">
                         <h2
-                            className="text-[26px] md:text-[36px] font-semibold text-white font-fira mb-6"
+                            className="text-[24px] sm:text-[30px] md:text-[36px] font-semibold text-white font-fira mb-6 leading-[1.25]"
                             style={{ lineHeight: "1.3em" }}
                         >
                             Let&apos;s Build Technology That Moves Your Business Forward
                         </h2>
-                        <div className="max-w-3xl mx-auto text-justify space-y-4 mb-8">
-                            <p className="text-text-light text-[16px] md:text-[18px] leading-relaxed">
+                        <div className="max-w-3xl mx-auto text-left space-y-4 mb-8">
+                            <p
+                                className="text-text-light text-[15px] sm:text-[16px] md:text-[18px] leading-[1.7] break-words"
+                                style={{ textAlign: "left", wordSpacing: "normal", letterSpacing: "normal" }}
+                            >
                                 Whether you&apos;re implementing Salesforce, adopting AI
                                 automation, migrating infrastructure to the cloud, or expanding
-                                development capacity â€” VirtueByte is ready to support your
+                                development capacity - VirtueByte is ready to support your
                                 journey.
                             </p>
-                            <p className="text-text-light text-[16px] md:text-[18px] leading-relaxed">
+                            <p
+                                className="text-text-light text-[15px] sm:text-[16px] md:text-[18px] leading-[1.7] break-words"
+                                style={{ textAlign: "left", wordSpacing: "normal", letterSpacing: "normal" }}
+                            >
                                 Combining deep business understanding and high engineering
                                 accuracy, we make sure that your systems are not only fit for
                                 today but also capable of continuous growth.
@@ -639,4 +657,5 @@ export default function AboutPage() {
         </>
     );
 }
+
 

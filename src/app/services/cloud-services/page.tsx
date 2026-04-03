@@ -158,14 +158,13 @@ export default function CloudServicesPage() {
  <p className="text-text-light text-[16px] md:text-[18px] leading-relaxed text-justify max-w-4xl mx-auto mb-4">
  Cloud consulting and cloud services help organizations design,
  migrate, optimize, and secure their infrastructure using modern
- cloud platforms. It&apos;s not just about moving servers â€” it&apos;s
+ cloud platforms. It&apos;s not just about moving servers - it&apos;s
  about transforming how your business operates, deploys
  applications, and scales technology.
  </p>
  <p className="text-text-light text-[16px] md:text-[18px] leading-relaxed text-justify max-w-4xl mx-auto mb-8">
  We combine cloud strategy with DevOps consulting services to help
- businesses modernize their digital infrastructure efficiently â€”
- enabling faster deployment cycles, reduced costs, increased
+ businesses modernize their digital infrastructure efficiently - enabling faster deployment cycles, reduced costs, increased
  scalability, stronger security, and improved uptime.
  </p>
  <div className="text-center">
@@ -259,7 +258,7 @@ export default function CloudServicesPage() {
  </div>
  <AnimatedSection animation="fadeInUp" delay={0.8}>
  <p className="text-primary text-center italic text-[16px] md:text-[18px] mt-8">
- We don&apos;t just migrate systems â€” we help organizations build scalable digital foundations, supported by reliable Cloud Consulting Services expertise.
+ We don&apos;t just migrate systems - we help organizations build scalable digital foundations, supported by reliable Cloud Consulting Services expertise.
  </p>
  </AnimatedSection>
  </div>
@@ -353,7 +352,7 @@ export default function CloudServicesPage() {
  <div className="relative max-w-[1280px] mx-auto px-5 lg:px-8">
  <SectionHeading
  title="Benefits of Cloud Consulting & Services"
- subtitle="Cloud adoption is no longer optional â€” it is a competitive advantage."
+ subtitle="Cloud adoption is no longer optional - it is a competitive advantage."
  />
  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
  {benefits.map((benefit, index) => (
@@ -411,4 +410,5 @@ export default function CloudServicesPage() {
  </>
  );
 }
+
 

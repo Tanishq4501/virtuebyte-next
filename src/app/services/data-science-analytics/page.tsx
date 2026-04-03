@@ -200,7 +200,7 @@ export default function DataScienceAnalyticsPage() {
  Transform raw data into actionable business intelligence.
  </p>
  <p className="text-text-light text-[16px] md:text-[18px] leading-relaxed text-justify max-w-4xl mx-auto mb-4">
- Modern businesses generate massive amounts of data â€” but data
+ Modern businesses generate massive amounts of data - but data
  alone doesn&apos;t drive growth. Insight does. At VirtueByte, we
  provide advanced data science and analytics consulting services
  that help organizations convert complex datasets into meaningful,
@@ -447,4 +447,5 @@ export default function DataScienceAnalyticsPage() {
  </>
  );
 }
+
 

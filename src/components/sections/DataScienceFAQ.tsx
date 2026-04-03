@@ -16,7 +16,7 @@ const faqs = [
  },
  {
  question: "How long does implementation take?",
- answer: "Timelines depend on project scope. Small analytics deployments may take 4â€“8 weeks, while enterprise-scale transformations may require phased implementation over several months."
+ answer: "Timelines depend on project scope. Small analytics deployments may take 4-8 weeks, while enterprise-scale transformations may require phased implementation over several months."
  },
  {
  question: "What business outcomes can clients expect?",
@@ -96,4 +96,5 @@ export default function DataScienceFAQ() {
  </section>
  );
 }
+
 

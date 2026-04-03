@@ -36,7 +36,7 @@ export const metadata: Metadata = {
  title:
  "DevOps Consulting Services for Faster, Reliable & Scalable Delivery | VirtueByte",
  description:
- "Accelerate software delivery with expert DevOps consulting â€” CI/CD pipeline implementation, infrastructure automation, containerization, monitoring, and cloud-native DevOps solutions.",
+ "Accelerate software delivery with expert DevOps consulting - CI/CD pipeline implementation, infrastructure automation, containerization, monitoring, and cloud-native DevOps solutions.",
  alternates: {
  canonical: getCanonicalUrl("/services/devops-consulting-services/"),
  },
@@ -46,10 +46,10 @@ metadata.description =
  "VirtueByte provides DevOps consulting, CI/CD automation, infrastructure as code, and monitoring for faster, reliable delivery.";
 
 const whyChooseItems = [
- { icon: FaCogs, title: "End-to-End DevOps Expertise", description: "From strategy to execution â€” we cover CI/CD, IaC, containers, monitoring, and cloud-native architecture." },
- { icon: FaCode, title: "Tool-Agnostic Approach", description: "We work with your preferred stack â€” Jenkins, GitLab, GitHub Actions, Docker, Kubernetes, Terraform, Ansible, and more." },
+ { icon: FaCogs, title: "End-to-End DevOps Expertise", description: "From strategy to execution - we cover CI/CD, IaC, containers, monitoring, and cloud-native architecture." },
+ { icon: FaCode, title: "Tool-Agnostic Approach", description: "We work with your preferred stack - Jenkins, GitLab, GitHub Actions, Docker, Kubernetes, Terraform, Ansible, and more." },
  { icon: FaRocket, title: "Faster Time-to-Market", description: "Automated pipelines and streamlined workflows accelerate releases without sacrificing quality." },
- { icon: FaShieldAlt, title: "Security-First DevSecOps", description: "Security integrated into every stage of the pipeline â€” from code commit to production deployment." },
+ { icon: FaShieldAlt, title: "Security-First DevSecOps", description: "Security integrated into every stage of the pipeline - from code commit to production deployment." },
  { icon: FaDollarSign, title: "Cost-Optimized Infrastructure", description: "Right-sized environments, automated scaling, and waste elimination reduce operational costs." },
  { icon: FaUsers, title: "Dedicated DevOps Teams", description: "Experienced engineers embedded within your workflows for seamless collaboration and knowledge transfer." },
  { icon: FaCloudUploadAlt, title: "Cloud-Native & Multi-Cloud Ready", description: "DevOps strategies that work across AWS, Azure, GCP, and hybrid environments." },
@@ -363,7 +363,7 @@ export default function DevOpsConsultingPage() {
  <div className="relative max-w-[1280px] mx-auto px-5 lg:px-8">
  <SectionHeading
  title="Benefits of DevOps Consulting"
- subtitle="DevOps isn't just a practice â€” it's a competitive advantage for modern software teams."
+ subtitle="DevOps isn't just a practice - it's a competitive advantage for modern software teams."
  />
  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
  {benefits.map((benefit, index) => (
@@ -421,4 +421,5 @@ export default function DevOpsConsultingPage() {
  </>
  );
 }
+
 
